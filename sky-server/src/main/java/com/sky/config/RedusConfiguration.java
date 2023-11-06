@@ -17,7 +17,6 @@ public class RedusConfiguration {
         // redis 工厂对象
         redisTemplate.setConnectionFactory(redisConnectionFactory);
         redisTemplate.setKeySerializer(new StringRedisSerializer());
-        redisTemplate.setValueSerializer(new StringRedisSerializer());
         return redisTemplate;
     }
 }
